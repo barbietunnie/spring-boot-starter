@@ -28,9 +28,9 @@ public class TopicService {
 
 	public void updateTopic(int id, Topic topic) {
 		for (int i = 0; i < topics.size(); i++) {
-			Topic t = topics.get(id);
+			Topic t = topics.get(i);
 			if(t.getId() == id) {
-				topics.set(i, t);
+				topics.set(i, topic);
 				return;
 			}
 		}
